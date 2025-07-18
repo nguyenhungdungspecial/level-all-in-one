@@ -1,31 +1,45 @@
 {
   "expo": {
-    "name": "level-all-in-one",
+    "name": "Level All In One",
     "slug": "level-all-in-one",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/icon.png",
     "scheme": "levelallinone",
     "userInterfaceStyle": "automatic",
-    "jsEngine": "jsc",
     "android": {
       "package": "com.hungdung.levelallinone",
+      "jsEngine": "jsc",
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
       "permissions": [
         "CAMERA",
         "ACCESS_FINE_LOCATION",
         "ACCESS_COARSE_LOCATION"
-      ],
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
     },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
     "extra": {
+      "router": {},
       "eas": {
-        "projectId": "project-id-sẽ-thêm-khi-link-eas"
+        "projectId": "867a3d1e-0bf0-463f-b354-138d04f50767"
       }
     }
   }
