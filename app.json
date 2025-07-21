@@ -4,43 +4,28 @@
     "slug": "level-all-in-one",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "levelallinone",
-    "userInterfaceStyle": "automatic",
-    "android": {
-      "package": "com.hungdung.levelallinone",
-      "jsEngine": "jsc",
-      "edgeToEdgeEnabled": true,
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "permissions": [
-        "CAMERA",
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION"
-      ]
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
+    "assetBundlePatterns": [
+      "**/*"
     ],
+    "android": {
+      "package": "com.nguyenhungdung.levelallinone",
+      "permissions": []
+    },
+    "ios": {
+      "supportsTablet": true
+    },
     "extra": {
-      "router": {},
       "eas": {
-        "projectId": "867a3d1e-0bf0-463f-b354-138d04f50767"
+        "projectId": "e4fb880e-0725-44d0-bb87-9575c2774400"
       }
-    }
+    },
+    "owner": "nguyenhungdung1"
   }
 }
