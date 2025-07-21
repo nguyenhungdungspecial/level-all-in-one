@@ -19,7 +19,8 @@
       "permissions": []
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nguyenhungdung.levelallinone"
     },
     "extra": {
       "eas": {
